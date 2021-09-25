@@ -3,10 +3,6 @@ from dataclasses import dataclass
 
 
 @dataclass
-class ApiKeys:
-    weather: str
-
-@dataclass
 class DbConfig:
     host: str
     password: str
@@ -26,7 +22,6 @@ class TgBot:
 class Config:
     tg_bot: TgBot
     db: DbConfig
-    api_keys: ApiKeys
 
 
 def cast_bool(value: str) -> bool:
@@ -48,6 +43,5 @@ def load_config(path: str):
             use_redis=cast_bool(tg_bot.get("use_redis")),
             enable_metrics=cast_bool(tg_bot.get("enable_metrics")),
         ),
-        db=DbConfig(**config["db"]),
-        api_keys=ApiKeys(**config["api_keys"]),
+        db=DbConfig(**config["db"])
     )
