@@ -6,8 +6,8 @@ After=network.target
 User=tgbot
 Group=tgbot
 Type=simple
-WorkingDirectory=/opt/ecoin_bot
-ExecStart=/opt/ecoin_bot/venv/bin/python bot.py
+WorkingDirectory=/opt/ecoin_ru_bot
+ExecStart=/opt/ecoin_ru_bot/venv/bin/python bot.py
 Restart=always
 
 [Install]
