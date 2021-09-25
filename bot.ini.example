@@ -5,7 +5,7 @@ use_redis =
 enable_metrics = 
 
 [db]
-user = ecoin_bot
+user = ecoin_ru_bot
 password = 
-database = ecoin_bot
+database = ecoin_ru_bot
 host = 127.0.0.1
