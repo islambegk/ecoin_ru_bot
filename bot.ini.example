@@ -1,0 +1,11 @@
+[tg_bot]
+token = 
+support_chat_id = 
+use_redis = 
+enable_metrics = 
+
+[db]
+user = ecoin_bot
+password = 
+database = ecoin_bot
+host = 127.0.0.1

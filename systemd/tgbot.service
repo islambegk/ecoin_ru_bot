@@ -1,0 +1,14 @@
+[Unit]
+Description=Ecoin Bot
+After=network.target
+
+[Service]
+User=tgbot
+Group=tgbot
+Type=simple
+WorkingDirectory=/opt/ecoin_bot
+ExecStart=/opt/ecoin_bot/venv/bin/python bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
